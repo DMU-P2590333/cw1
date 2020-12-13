@@ -1,0 +1,213 @@
+body{
+background-image: url(../img/coal.jpg);
+}
+/*This piece of css allows the browser to recognise how to style the background
+of the website. It was chosen here to use a image, that would repeat automatically
+due to its size being smaller than the background itself, to have some representation
+of the book/film to the website. The url() in this piece of coding allows the browser
+to locate the image that it wanting to be sourced. "../ has to be used within this because
+of the use of this external file. "../" allows the browser to take a "step back" out of the
+css file, meaning it can then locate the img file*/
+
+.header {
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  border-style: double;
+  border-color: #ffc107;
+  border-width: 5px;
+}
+/*The reason this part of css has a class section for the header is because the header
+is an image, meaning it would come under the image section. However I want to affect
+this image differently to the other images.
+The display and margin section of this css means that the header will appear in the
+centre of the page and will accomodate appropriately on different devices.
+I added a 10px padding to allow room around the border to ensure that nothing overlaps*/
+
+ nav{
+   text-align: center;
+   font-size:26px;
+   color: #ffc107;
+   padding: 10px;
+   font-family: "Agency FB";
+   border-style: double;
+   border-color: #ffc107;
+   border-width: 5px;
+   display: inline-block;
+   padding-left: 0px;
+   padding-right: 0px
+ }
+/*For the navigation bar I wanted it to be in the centre, for this I used the
+test-align element and used the tag center. The reason I used the last three
+codes was to allow the hover element to fill the whole area up to the border. Overall
+it doesn't affect the code massively, it was mainly for my own satisfaction.*/
+ h2{
+   text-align: center;
+   font-size:26px;
+   font-family: "Agency FB";
+   background-color: #ffc107;
+   display: inline-block;
+   padding-right: 5px;
+   padding-left: 5px;
+ }
+
+ video{
+   display: block;
+   margin: auto;
+   max-width: 90%
+ }
+ /*Similarly to the header image, I have used the display and margin sections
+ to allow the video to appear in the middle of the webpage. There is no gain to
+ this except for asthetic reasons.*/
+
+  p{
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+    font-family: "Agency FB";
+    color: #ffc107;
+  }
+  /*Using the P selection in css allows the sizing and font to be changed*/
+
+  .info{
+    padding: 10px;
+    text-align: left;
+  }
+
+   .link{
+    max-width: 10%;
+    padding: 5px
+  }
+
+  .photo{
+    float: left;
+    padding-top: 15px;
+    padding-right: 5px;
+    height: 187.5px;
+    width: 150px
+  }
+
+  h3{
+    font-size:32px;
+    text-align: center;
+    font-family: "Agency FB";
+    background-color: #ffc107
+  }
+/*Throughout the entire code, differe h elements were used this is because differnet
+elements have different priorities. For example h1 is the largest default heading
+available, h6 is the smallest.*/
+  table{
+    width: 75%;
+    margin: auto;
+    font-family: "Agency FB";
+    font-size: 20px;
+    color: #ffc107;
+    border-style: double;
+    border-width: 5px;
+    border-color: #ffc107
+  }
+
+  audio{
+    display: block;
+    margin: auto;
+    padding: 5px;
+
+  }
+
+  footer{
+    text-align: center;
+    padding: 5px;
+    border-style: double;
+    border-color: #d5b206;
+    border-width: 10px;
+    font-family: "Agency FB";
+    font-size: 18px;
+    color: #ffc107
+  }
+
+  h1{
+    text-align: center;
+    font-size: 32px;
+    font-family: "Agency FB";
+    background-color: #ffc107;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .parent{
+    display: flex;
+  justify-content: center;
+  }
+
+  Section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*This section::after allows the corresponding sections to stop following the float
+left code rules meaning that any content after this would not apply to the same rule and would
+not sit by its side.*/
+
+.youtube{
+  margin-left: 40%;
+}
+
+a:link{
+  color: #ffc107
+}
+a:visited{
+  color: #ffc107
+}
+a:hover{
+  color: black;
+  background-color:#ffc107
+}
+a:active{
+  color: #ffc107
+}
+/*These 4 with the a: allows the code to change the colour of link text. The default
+colour is black and purple, which didn't go with the astetic of the website.*/
+a{
+  padding: 10px;
+}
+
+.one{
+  background-color:
+}
+.one:hover{
+  background-color: #ffc107
+}
+/*These two parts of css were used to create the hover effect on the navigation bar*/
+}
+.nothing{
+  padding:0px
+}
+img{
+  max-width: 100%
+}
+#onhover {
+  display: none;
+}
+#hover:hover div[id="initial"] {
+  display: none;
+}
+#hover:hover div[id="onhover"] {
+  display: block;
+}
+/*Finding this css coding online allows the cast images to have a hover effect,
+allowing the cast image to change to their character image*/
+
+.ref{
+  max-width:100%
+}
+li{
+  list-style-type: none;
+  margin-left: 90%
+}
+/*Using css styling for a list allows the browser to understand what the table
+is supposed to look like*/
+.small{
+  font-size: 20px;
+  font-family: "Agency FB"
+}

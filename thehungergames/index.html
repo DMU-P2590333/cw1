@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <!--This piece of code allows the webpage to appropriately resize for any resolution of device-->
+    <title>Home</title>
+
+<!--This here links the html file to the css stye sheet. Without this the
+browser would not know how to style the page-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+<!--For the header it was decided to create an external image for the header
+instead of using a H1 element. This was to ensure that the desired look and the
+intended affect was easily met.
+It also has a seperate class name to the other images so I can change the style
+of this image seperately and differently to the others-->
+    <img class='header' src="img/header2.jpg" alt="Header">
+
+<!--The only reason this h6 element was placed here was to create spacing between
+the header and the navigation bar. Although padding could of been used to create this effect.
+The padding would negatively effect the look which was trying to be achieved. Either through
+creating the navigation bar to large or offsetting the text within the navigation bar.
+The reason the h6 was used specifically was because its the smallest heading element, meaning
+it has the smallest spacing, and it was meant the p element was needed. If the p element
+was used, the styling rules (that were not wanted) here would of been applied.-->
+
+<h6 class="nothing"></h6>
+
+  <div class="parent">
+    <nav class="mainmenu">
+<!--The two links in the navigation bar have a class name so a hover style can be
+added in the css sheet easily-->
+    <a class="one" href="index.html">The Movie</a><a class="one" href="cast.html">The Cast</a>
+    </nav>
+  </div>
+
+<!-- It was decided to centre everything on the home page to bring everything together
+and make it flow more, making it easier for the user to follow the website with ease.
+By using an external file called the css stylesheet, and linking it to the html files,
+the style could be coded seperately meaning that it was a cleaner and simpler looking
+code. -->
+              <div class="parent">
+                <h1>The Movie</h1>
+              </div>
+
+              <div class="parent">
+                <h2>Synopsis</h2>
+              </div>
+
+
+  <p>"In a dystopian future, the totalitarian nation of Panem is
+      divided into 12 districts and the Capitol. Each year two young
+      representatives from each district are selected by lottery to participate
+      in The Hunger Games. Part entertainment, part brutal retribution for a
+      past rebellion, the televised games are broadcast throughout Panem.
+      The 24 participants are forced toeliminate their competitors while the
+      citizens of Panem are required to watch. When 16-year-old Katniss'
+      young sister, Prim, is selected as District 12's female representative,
+      Katniss volunteers to take her place. She and her male counterpart, Peeta,
+      are pitted against bigger, stronger representatives, some of whom have
+      trained for this their whole lives."
+      - Susanne Collins (Author)</p>
+
+        <div class="parent">
+          <h2>Watch the trailer here:</h2>
+        </div>
+
+<!--When adding a video element to html, two different formats were chosen (mp4 and webm)
+this is mainly because different browsers only support certain formats. Giving multiple
+formats increases the chance of the viewer being able to watch the video without an
+external source. However just incase a viewers broweser does not support the given formats
+it is made available for a message to appear with a link to the youtube video address.
+The way this message comes up is the browser will work its way down the source list
+within the video element (mp4 first then webm) if the browser doesn't support these,
+it will then show the message as that is the last thing in the element. A poster
+element has also been used to change the thumnail of the video from a random freeze frame to
+the film poster. Putting controls in the coding ensures that the user can control the video
+through a play button and volume.-->
+      <video controls poster="img/thehungergames.jpg">
+        <source src="vid/TheHungerGames.mp4" type="video/mp4">
+          <source src="vide/TheHungerGames.webm" type="video/webm">
+            I'm sorry your browser does not support the video format,
+            but you can watch the video <a href="https://www.youtube.com/watch?v=mfmrPu43DF8">Here</a>
+      </video>
+
+<!--Using external links to link the user to a viewing website seemed
+appropriate as it is often used to allow the user to easy find the film if they
+are interested in watching it. It was put on the home page after the trailer as it
+is usually after the trailer when someone decides if they want to see the film.
+YouTube and Prime Video were chosen as the external links due to the popularity
+of the platforms. Although there may be bigger platforms they did not necesarily
+have the film available.-->
+
+      <p>If you would like to watch the full film, follow one of the links
+      below</p>
+<!--These two links are displayed as images, meaning the user will recognise the logo,
+and can choose the platform quicker, as the human brain processes an image faster than
+text. They have been put in different classes, meaning i can edit them seperately and have
+different styles attached to it.-->
+<a class='youtube' href='https://www.youtube.com/watch?v=SrHOglErLwQ'><img src="img/youtube2.png" alt="https://www.youtube.com/watch?v=SrHOglErLwQ" width='10%' height='10%'></a>
+
+  <a class='prime' href='https://www.amazon.co.uk/Hunger-Games-4K-UHD/dp/B082R5PB6D/ref=sr_1_1?dchild=1&keywords=the+hunger+games&qid=1605017071&s=instant-video&sr=1-1'><img src="img/prime.jpg" alt="https://www.amazon.co.uk/Hunger-Games-4K-UHD/dp/B082R5PB6D/ref=sr_1_1?dchild=1&keywords=the+hunger+games&qid=1605017071&s=instant-video&sr=1-1" width='10%' height='10%'></a>
+
+<h6 class="nothing"></h6>
+
+<!--Putting a link in the footer for the sources seemed appropriate as it is out
+of the way and does not distract the user from the main focus of the page, still
+allowing those who deserved credit for sources still got it.-->
+<footer>Any source I used for this website can be found credited in this<a href="reference.html" class="here">Reference Page</a>
+  <!--Putting a br element here allows the Pnumber to appear on a seperate line in the footer
+  but without any further coding-->
+  <br>P2590333</footer>
+
+  </body>
+</html>

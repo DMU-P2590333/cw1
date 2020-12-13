@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+<!--This piece of code allows the webpage to appropriately resize for any resolution of device-->
+  <title>The Cast</title>
+
+<!--This here links the html file to the css stye sheet. Without this the
+browser would not know how to style the page-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+    <body>
+
+<!--For the header it was decided to create an external image for the header
+instead of using a H1 element. This was to ensure that the desired look and the
+intended affect was easily met-->
+    <img class='header' src="img/header2.jpg" alt="Header">
+
+    <!--The only reason this h6 element was placed here was to create spacing between
+    the header and the navigation bar. Although padding could of been used to create this effect.
+    The padding would negatively effect the look which was trying to be achieved. Either through
+    creating the navigation bar to large or offsetting the text within the navigation bar.
+    The reason the h6 was used specifically was because its the smallest heading element, meaning
+    it has the smallest spacing, and it was meant the p element was needed. If the p element
+    was used, the styling rules (that were not wanted) here would of been applied.-->
+    <h6 class="nothing"></h6>
+
+<!--Here a div element has been included here to allow the size of the background of
+the element to be changed easily. These div elements (class parent) can be seen
+throughout the code-->
+    <div class="parent">
+      <nav class="mainmenu">
+        <a class="one" href="index.html">The Movie</a><a class="one" href="cast.html">The Cast</a>
+      </nav>
+    </div>
+
+    <div class="parent">
+      <h1>The Cast</h1>
+    </div>
+
+<!--Around the Cast Name and the end of their section, a section element has been
+placed allowing the "float left" to stop acting and allow the rest of the page to
+be laid out normally (this is the same for the other cast members)-->
+    <section>
+    <div class="parent">
+      <h2>Jennifer Lawrence</h2>
+    </div>
+
+    <h6 class="nothing"></h6>
+
+<!--Adding these id names meant that a hover effect could easily be created in
+  css style sheet (this is the same for the other cast members)-->
+      <div class='photo' id="hover">
+        <div id="initial"><img src="img/jenniferlawrence.jpg" alt=""></div>
+        <div id="onhover"><img src="img/katniss.jpg" alt=""></div>
+      </div>
+
+<!--This p element has a different class name due to it wanting to be styled differently to
+the other p elements, for example on the index page.-->
+      <p class="info"> Jennifer Lawrence is an american actress, born in
+          Kentucky in 1990. She is one of the most well known actors of modern film,
+          being the highest paid female actor in 2015 and 2016. Lawrence's first role
+          in acting was a 2007 thriller “Devil You Know” (later released in 2013).
+          In 2011 Lawrence played the role of Mystique in the Marvel comics adaptation
+          X-Men: First Class. Soon after (2012), Jennifer Lawrence played her,
+          arguably, biggest role, Katniss Everdeen in The Hunger Games. She played
+          this role in the following 3 films in the franchise, which ended in 2015
+          with "Mockingjay : Part 2", landing herself in the UK official charts with
+          the song "The Hanging Tree" which was feature in the film Mockingjay : Part 1.
+          She continued to portray the character Mystique in the X-Men films making her
+          fourth and final appearence in 2019. Lawrence stared alongside Chris Pratt
+          in the hit movie "Passengers", a futuristic film about a couple of people
+          who are woken from an induced hybernation a few decades too early on their
+          route to a different planet. Lawrence received the highest payment for
+          the film, beating Pratt's cheque by 8 Million Dollards. She has a few
+          announced roles coming in the next couple of years, including working with
+          Netflix and producing a film adaptaion of Hannah Kents book Burial Rites.
+        </p>
+
+      </section>
+        <div class="parent">
+          <h3>Awards and Nominations</h3>
+        </div>
+
+<!--Here a table was used to add some extra information. The table element created
+  table itself. the tr element within that started a new row, and the th element included
+  the text that was needed in that row. (this is the same for the other cast members)-->
+      <table>
+        <tr>
+          <th>Award Ceremony</th>
+          <th>Wins</th>
+          <th>Nominations</th>
+        </tr>
+        <tr>
+          <th>Academy Awards</th>
+          <th>1</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <th>Teen Choice Awards</th>
+          <th>8</th>
+          <th>14</th>
+        </tr>
+        <tr>
+          <th>Golden Globe Awards</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <th>Peoples Choice Awards</th>
+          <th>5</th>
+          <th>7</th>
+        </tr>
+      </table>
+<!--Here a p element was used to break up the table to reduce confusion. Without this
+it could appear that the total amount of awards would be the addition of the wards stated
+above, however the total includes any awards that weren't stated in the table above
+(this is the same for the other cast members)-->
+      <p class="small">These are only a few of the awards they have been nominated and awarded for. Here is the total number:</p>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>118</th>
+          <th>183</th>
+        </tr>
+      </table>
+
+      <p>After the release of the last film in The Hunger Games franchise, the
+        cast were at Comic Con 2015, this gave MTV a chance to interview them
+        on their thoughts on the end of the franchise,
+        have a listen to Jennifers:</p>
+
+<!--When adding an audio element to html, two different formats were chosen (mp4 and ogg)
+this is mainly because different browsers only support certain formats. Giving multiple
+formats increases the chance of the viewer being able to listen to the audio without an
+external source. However just incase a viewers browser does not support the given formats,
+it is made available for a message to appear with a link to the youtube video address that
+sources the audio file. The way this message comes up is the browser will work its way down
+the source list within the video element (mp3 first then ogg) if the browser doesn't
+support these, it will then show the message as that is the last thing in the element.
+A .wav format was not chosen for this due to the files of a .wav being too large.
+Putting controls in the coding ensures that the user can control the video
+through a play button and volume.
+(this is the same for the other cast members)-->
+      <audio controls>
+        <source src="aud/jeninterview.mp3" type="audio/mpeg" />
+        <source src="aud/jeninterview.ogg" type="audio/ogg" />
+          <p>Sorry, your browser does not support the audio files available,
+            however you can download the mp3 version <a href="aud/jeninterview.mp3">here</a></p>
+      </audio>
+
+    <section>
+
+    <div class="parent">
+      <h2>Josh Hutcherson</h2>
+    </div>
+
+    <h6 class="nothing"></h6>
+
+    <div class='photo' id="hover">
+      <div id="initial"><img src="img/josh.jpg" alt=""></div>
+      <div id="onhover"><img src="img/peeta.jpg" alt=""></div>
+    </div>
+
+    <p class="info">Josh Hutcherson is an American actor and producer
+      born in Kentucky 1992. Hutcherson landed his first major role as a child
+      star back in
+      2002 in the pilot episode of “House Blend”. Although many of his first
+      known part were smaller, he was consistantly working on something new Promptly followed by his
+      first film role in 2003 in Miracle Dog. His breakthrough film would
+      most likely be “Bridge to Terabithia” (2007), he played the character
+      Jessy Aarons, a young boy who befriends the new girl Leslie Burke, played
+      by Anns Sophia Robb. The two friends create an imaginary utopian world.
+      He is also known for his roles in films such as “Journey to the Center
+      of the Earth” (2008) and “The Kids Are Alright” (2010). Josh landed the
+      role of the male lead, Peeta Mellark, in The Hunger Games franchise,
+      allowing him to be nominated and awarded all types of awards for his important
+      role in the franchise.
+      Before filming the final installments of the "HG" franchise. In 2013
+      Hutcherson voiced a character in the action animation Epic, this being
+      Hutcherson highest grossing film other than Hunger Games. Josh acted in
+      a thriller called "Escobar:Paradise Lost", he was also an excecutive producer
+      on the film. In 2017, Hutcherson got cast as a main character in a science fiction
+      tv series called Future Man which is available on VoD website Hulu.</p>
+    </section>
+
+    <div class="parent">
+      <h3>Awards and Nominations</h3>
+    </div>
+
+      <table>
+        <tr>
+          <th>Award Ceremony</th>
+          <th>Wins</th>
+          <th>Nominations</th>
+        </tr>
+        <tr>
+          <th>Mammoth Film Festival</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <th>Teen Choice Awards</th>
+          <th>5</th>
+          <th>9</th>
+        </tr>
+        <tr>
+          <th>CinemaCon</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <th>Peoples Choice Awards</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+      </table>
+        <p class="small">These are only a few of the awards they have been nominated and awarded for. Here is the total number:</p>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>19</th>
+          <th>24</th>
+        </tr>
+      </table>
+
+      <p>After the release of the last film in The
+        Hunger Games franchise, the cast were at Comic Con 2015, this gave MTV a
+        chance to interview them on their thoughts on the end of the franchise, have
+        a listen to Joshs:</p>
+
+      <audio controls>
+        <source src="aud/joshinterview.mp3" type="audio/mpeg" />
+        <source src="aud/joshinterview.ogg" type="audio/ogg" />
+        <p>Sorry, your browser does not support the audio files available,
+          however you can download the mp3 version <a href="aud/joshinterview.mp3">here</a></p>
+      </audio>
+
+  <section>
+    <div class="parent">
+      <h2>Woody Harrleson</h2>
+    </div>
+
+    <h6 class="nothing"></h6>
+
+    <div class='photo' id="hover">
+        <div id="initial"><img src="img/woody.jpg" alt=""></div>
+        <div id="onhover"><img src="img/haymitch.jpg" alt=""></div>
+    </div>
+
+    <p class="info">Woody Harrelson is an American actor, born in
+      Texas 1961. Harrelson’s most well known role would probably be Woody
+      Boyd from the NBC sitcom “Cheers”, which he played for 8 year until
+      1993. He also appeared briefly in “Cheers” spin-off “Frasier” as well
+      as a few episodes of “Will and Grace” in 2001. His first
+      movie was in 1986 in “Wildcats” an American football comedy.
+      He returned to tv in 2014 in “True Detective” alongside Matthew McConaughey.
+      Harrleson has stared in a variety of films ranging from rom-coms to thrillers.
+      In 2009 Harrelson landed the role of Tallahassee in the widely popular, horror
+      come comedy "ZombieLand". After 10 years a much wanted sequel was released.
+      Woody Harrelson landed the role of Haymitch Abernathy in the Hunger
+      Games franchise in 2011. Harrelson is also widely known for his portral
+      of Merritt McKinney in the 2 part film series "Now You See Me" a film about
+      a few magicians gaining fame and becoming a part of a secret magicians club.</p>
+    </section>
+
+    <div class="parent">
+      <h3>Awards and Nominations</h3>
+    </div>
+
+    <table>
+      <tr>
+        <th>Award Ceremony</th>
+        <th>Wins</th>
+        <th>Nominations</th>
+      </tr>
+      <tr>
+        <th>Emmy Awards</th>
+        <th>1</th>
+        <th>9</th>
+      </tr>
+      <tr>
+        <th>Academy Awards</th>
+        <th>-</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <th>Golden Globe Awards</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+      <tr>
+        <th>OFTA Awards</th>
+        <th>1</th>
+        <th>5</th>
+      </tr>
+    </table>
+        <p class="small">These are only a few of the awards they have been nominated and awarded for. Here is the total number:</p>
+    <table>
+      <tr>
+        <th>Total</th>
+        <th>28</th>
+        <th>89</th>
+      </tr>
+    </table>
+
+    <p>During the press tour for the first Hunger Games Film, AMC Theatres
+      interviewed Harrelson about his experience during filming:</p>
+
+    <audio controls=true>
+    <source src="aud/woodyinterview.mp3" type="audio/mpeg" />
+    <source src="aud/woodyinterview.ogg" type="audio/ogg" />
+    <p>Sorry, your browser does not support the audio files available,
+    however you can download the mp3 version <a href="aud/jeninterview.mp3">here</a></p>
+    </audio>
+
+  <section>
+    <div class="parent">
+      <h2>Elizabeth Banks</h2>
+    </div>
+
+    <h6 class="nothing"></h6>
+
+    <div class='photo' id="hover">
+        <div id="initial"><img src="img/banks.jpg" alt=""></div>
+        <div id="onhover"><img src="img/effie.jpg" alt=""></div>
+    </div>
+
+    <p class="info">Elizabeth Banks is an American actress, writer,
+      director and producer, born in Massachusetts in 1974. She got offered
+      her first role in the drama Santa Barbara, however she declined due
+      to her completing her degree. She made her acting debut in 1998 in
+      the independent film “Surrender Dorothy”. In 2002 Banks set up a
+      production company with her future husband, calling it Brownstone
+      Productions. She landed one of her largest roles in 2005 in the
+      comedy film “The 40 Year Old Virgin”. Banks landed her role in
+      The Hunger Games franchise in 2011 playing the role of Effie
+      Trinket. In 2012, Banks produced and plaid the role of a judge Gail, in
+      the popular acapella teen film "Pitch Perfect" After the success of the film,
+      there was a second and third film released, both produced by Banks again. In
+      2019 Elizabeth played Bosley in the remake of "Charlies Angels" aswell as
+      writing, directing and producing the film.</p>
+
+    </section>
+      <div class="parent">
+        <h3>Awards and Nominations</h3>
+      </div>
+
+      <table>
+        <tr>
+          <th>Award Ceremony</th>
+          <th>Wins</th>
+          <th>Nominations</th>
+        </tr>
+        <tr>
+          <th>CinemaCon</th>
+          <th>2</th>
+          <th>2</th>
+        </tr>
+        <tr>
+          <th>Teen Choice Awards</th>
+          <th>-</th>
+          <th>2</th>
+        </tr>
+        <tr>
+          <th>MTV Movie Awards</th>
+          <th>2</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <th>OFTA Awards</th>
+          <th>-</th>
+          <th>3</th>
+        </tr>
+      </table>
+          <p class="small">These are only a few of the awards they have been nominated and awarded for. Here is the total number:</p>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>13</th>
+          <th>32</th>
+        </tr>
+      </table>
+
+      <p>Before the release of the 3rd Hunger Games
+      film in the franchise, famous American talk show host Ellen, interviewed
+      Elizabeth Banks on the film:</p>
+
+      <audio controls>
+       <source src="aud/banksinterview.mp3" type="audio/mpeg" />
+       <source src="aud/banksinterview.ogg" type="audio/ogg" />
+       <p>Sorry, your browser does not support the audio files available,
+       however you can download the mp3 version <a href="aud/banksinterview.mp3">here</a></p>
+      </audio>
+
+      <section>
+        <div class="parent">
+          <h2>Liam Hemsworth</h2>
+        </div>
+
+    <h6 class="nothing"></h6>
+
+     <div class='photo' id="hover">
+         <div id="initial"><img src="img/liam.jpg" alt=""></div>
+         <div id="onhover"><img src="img/gale.jpg" alt=""></div>
+     </div>
+
+     <p class="info">Liam Hemsworth is an Australian actor, born in
+       Victoria 1990. His first professional role was in the Australian soap
+       drama “Home and Away” in 2007 as a guest. Later that year he was signed
+       on to play a recurring character in “Neighbours” another popular soap
+       that his brother Chris Hemsworth also appeared in, he appeared in the
+       show until 2008. In 2009 Hemsworth was chosen to act alongside Sylvester
+       Stallone in the 2010 film “The Expendables”, unfortunately his character
+       was written out of script. However he was given the opportunity to
+       appear in the films sequel. In 2011 Hemsworth was announced to play
+       Gale Hawthorn in the franchise The Hunger Games which he appeared in
+       throughout the years. Hemsworths current role is playing a terminally ill
+       man who is trying to ensure that his wife has everything she needs before he dies
+       in "Most Dangerous Game" a new horror tv series.</p>
+     </section>
+
+      <div class="parent">
+        <h3>Awards and Nominations</h3>
+      </div>
+
+      <table>
+        <tr>
+          <th>Award Ceremony</th>
+          <th>Wins</th>
+          <th>Nominations</th>
+        </tr>
+        <tr>
+          <th>CinemaCon</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <th>Teen Choice Awards</th>
+          <th>12</th>
+          <th>2</th>
+        </tr>
+        <tr>
+          <th>Kids Choice Awards</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <th>Peoples Choice Awards</th>
+          <th>1</th>
+          <th>3</th>
+        </tr>
+      </table>
+        <p class="small">These are only a few of the awards they have been nominated and awarded for. Here is the total number:</p>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>6</th>
+          <th>18</th>
+        </tr>
+      </table>
+
+  <p>After the release of the last film in The Hunger Games franchise, the cast
+    were at Comic Con 2015, this gave MTV a chance to interview them on their
+    thoughts on the end of the franchise, have a listen to Liams:</p>
+
+    <audio controls>
+      <source src="aud/liaminterview.mp3" type="audio/mpeg" />
+      <source src="aud/liaminterview.ogg" type="audio/ogg" />
+      <p>Sorry, your browser does not support the audio files available,
+      however you can download the mp3 version <a href="aud/liaminterview.mp3">here</a></p>
+    </audio>
+
+    <h6 class="nothing"></h6>
+
+<!--Putting a link in the footer for the sources seemed appropriate as it is out
+of the way and does not distract the user from the main focus of the page, still
+allowing those who deserved credit for sources still got it.-->
+   <footer>Any source I used for this website can be found credited in this<a href="reference.html">Reference Page</a>
+<!--Putting a br element here allows the Pnumber to appear on a seperate line in the footer
+but without any further coding-->
+     <br>P2590333</footer>
+</body>
+</html>
